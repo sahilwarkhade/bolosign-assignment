@@ -11,12 +11,7 @@ const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
 
 const __dirname = path.resolve();
 
-app.use(
-  cors({
-    origin: "https://bolosign-assignment.vercel.app/",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(express.json({ limit: "20mb" })); // base64 images
 
