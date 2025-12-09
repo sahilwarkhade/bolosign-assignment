@@ -8,7 +8,7 @@ import { usePdfFields } from "../hooks/usePdfFields.js";
 
 pdfjs.GlobalWorkerOptions.workerSrc = "public/pdf.worker.js";
 
-const PDF_FILE = "/sample.pdf";
+const PDF_FILE = "public/sample.pdf";
 const DEFAULT_RATIO = 1.4142; 
 
 export default function PdfEditor() {
