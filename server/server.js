@@ -3,6 +3,7 @@ import cors from "cors";
 import path from "path";
 import { connectDB } from "./config/db.js";
 import signRoutes from "./routes/signRoutes.js";
+import "dotenv/config.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -13,7 +14,7 @@ const __dirname = path.resolve();
 app.use(
   cors({
     origin: CLIENT_URL,
-    credentials: true
+    credentials: true,
   })
 );
 
