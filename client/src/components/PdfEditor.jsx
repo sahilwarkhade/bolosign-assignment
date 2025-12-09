@@ -2,13 +2,12 @@ import "pdfjs-dist/web/pdf_viewer.css";
 import { useEffect, useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import axios from "axios";
-import PDF_FILE from "../assets/sample.pdf"
 
 import DraggableField from "./DraggableField.jsx";
 import { usePdfFields } from "../hooks/usePdfFields.js";
 
-pdfjs.GlobalWorkerOptions.workerSrc = "public/pdf.worker.js";
-
+pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.js";
+const PDF_FILE = "/sample.pdf";
 const DEFAULT_RATIO = 1.4142; 
 
 export default function PdfEditor() {
