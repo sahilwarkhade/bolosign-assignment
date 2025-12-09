@@ -13,7 +13,7 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: CLIENT_URL,
+    origin: "https://bolosign-assignment.vercel.app/",
     credentials: true,
   })
 );
