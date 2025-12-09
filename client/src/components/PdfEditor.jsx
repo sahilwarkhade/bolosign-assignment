@@ -114,7 +114,7 @@ export default function PdfEditor() {
     try {
       setLoading(true);
       const res = await axios.post(
-        import.meta.env.VITE_SERVER_URL || "http://localhost:4000/api/sign-pdf",
+        `${import.meta.env.VITE_SERVER_URL}/api/sign-pdf` || "http://localhost:4000/api/sign-pdf",
         payload
       );
 
