@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.drag-area {
+  touch-action: none !important;
+}
+
+.rnd-resize-handle {
+  touch-action: none !important;
+}
+
+.rnd-draggable {
+  touch-action: none !important;
+}
+.field-rnd {
+  touch-action: none;
+}
+
+
+/* Prevent Chrome DevTools mobile emulation from stopping touch drags */
+.drag-handler {
+  touch-action: none !important;
+  -webkit-user-drag: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+
+.resize-handler {
+  touch-action: none !important;
+}
